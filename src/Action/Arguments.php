@@ -16,6 +16,7 @@ class Arguments
         'OPTION'       => 'getOption',
         'DATETIME'     => 'getDateTime',
         'PLACE'        => 'getPlace',
+        'SIGN_IN'      => 'getSignInStatus',
     ];
 
     /**
@@ -124,5 +125,21 @@ class Arguments
     private function getPlace($argument)
     {
         return new Location($argument['placeValue']);
+    }
+
+    /**
+     * Get sign in argument.
+     *
+     * @param array $argument
+     *
+     * @return string|null
+     */
+    private function getSignInStatus($argument)
+    {
+        if ('type.googleapis.com/google.actions.v2.SignInValue' !== $argument['extension']['@type']) {
+            return;
+        }
+
+        return $argument['extension']['status'];
     }
 }
