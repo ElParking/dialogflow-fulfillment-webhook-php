@@ -213,7 +213,9 @@ class Conversation
             }
         }
 
-        $out['richResponse']['items'] = $items;
+        if (count($items) > 0) {
+            $out['richResponse']['items'] = $items;
+        }
 
         if (count($suggestions) > 0) {
             $out['richResponse']['suggestions'] = $suggestions;

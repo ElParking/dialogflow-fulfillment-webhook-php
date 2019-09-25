@@ -1,0 +1,78 @@
+{
+   "responseId": "",
+   "queryResult": {
+      "queryText": "",
+      "action": "",
+      "parameters": {},
+      "allRequiredParamsPresent": true,
+      "fulfillmentText": "",
+      "fulfillmentMessages": [],
+      "outputContexts": [],
+      "intent": {
+         "name": "ask_for_sign_in_confirmation",
+         "displayName": "ask_for_sign_in_confirmation"
+      },
+      "intentDetectionConfidence": 1,
+      "diagnosticInfo": {},
+      "languageCode": ""
+   },
+   "originalDetectIntentRequest": {
+      "source": "google",
+      "version": "2",
+      "payload": {
+         "isInSandbox": true,
+         "surface": {
+            "capabilities": [
+               {
+                  "name": "actions.capability.SCREEN_OUTPUT"
+               },
+               {
+                  "name": "actions.capability.AUDIO_OUTPUT"
+               },
+               {
+                  "name": "actions.capability.MEDIA_RESPONSE_AUDIO"
+               },
+               {
+                  "name": "actions.capability.WEB_BROWSER"
+               }
+            ]
+         },
+         "inputs": [
+            {
+               "rawInputs": [],
+               "intent": "",
+               "arguments": [
+                  {
+                     "name": "SIGN_IN",
+                     "extension": {
+                        "@type": "type.googleapis.com/google.actions.v2.SignInValue",
+                        "status": "OK"
+                     }
+                  }
+               ]
+            }
+         ],
+         "user": {},
+         "conversation": {},
+         "availableSurfaces": [
+            {
+               "capabilities": [
+                  {
+                     "name": "actions.capability.SCREEN_OUTPUT"
+                  },
+                  {
+                     "name": "actions.capability.AUDIO_OUTPUT"
+                  },
+                  {
+                     "name": "actions.capability.MEDIA_RESPONSE_AUDIO"
+                  },
+                  {
+                     "name": "actions.capability.WEB_BROWSER"
+                  }
+               ]
+            }
+         ]
+      }
+   },
+   "session": ""
+}
