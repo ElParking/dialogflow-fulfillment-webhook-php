@@ -1,5 +1,5 @@
 {
-    "name": "eristemena/dialogflow-fulfillment-webhook-php",
+    "name": "elparking/dialogflow-fulfillment-webhook-php",
     "description": "Dialogflow Fulfillment Webhook v1 & v2",
     "keywords": [
         "Dialogflow",
