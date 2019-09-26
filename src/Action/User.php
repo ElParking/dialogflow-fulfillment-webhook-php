@@ -13,6 +13,8 @@ class User
     /** @var null|Carbon\Carbon * */
     protected $lastSeen;
 
+    protected $accessToken;
+
     /**
      * @param array $data request array
      */
@@ -24,6 +26,10 @@ class User
 
         if (isset($data['lastSeen'])) {
             $this->lastSeen = new Carbon($data['lastSeen']);
+        }
+
+        if (isset($data['accessToken'])) {
+            $this->accessToken = $data['accessToken'];
         }
     }
 
@@ -43,6 +49,11 @@ class User
      * @return null|Carbon\Carbon
      */
     public function getLastSeen()
+    {
+        return $this->lastSeen;
+    }
+
+    public function getAccessToken()
     {
         return $this->lastSeen;
     }
