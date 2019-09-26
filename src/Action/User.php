@@ -13,6 +13,7 @@ class User
     /** @var null|Carbon\Carbon * */
     protected $lastSeen;
 
+    /** @var string */
     protected $accessToken;
 
     /**
@@ -53,8 +54,13 @@ class User
         return $this->lastSeen;
     }
 
+    /**
+     * string with the user access token
+     *
+     * @return string
+     */
     public function getAccessToken()
     {
-        return $this->lastSeen;
+        return $this->accessToken;
     }
 }
